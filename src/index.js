@@ -24,9 +24,14 @@ app.get('/loyalt/quiz', function(req, res) {
 })
 
 app.post('/loyalt/quiz/submit', function(req, res) {
-  console.log(req.body)
+  const params = {
+    quizAverage: 3,
+    quizResult: 2,
+    pointsEarned: 60
+  }
+
   res.status(200)
-  res.send('Successfully sended')
+  res.json(params)
 })
 
 //  Serve
