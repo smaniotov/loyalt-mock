@@ -1,13 +1,13 @@
 {
   "name": "loyalt-mock",
   "version": "1.0.0",
-  "description": "",
+  "description": "Only for testing purposes",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Vinícius Smanioto",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
