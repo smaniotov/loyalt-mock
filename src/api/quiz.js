@@ -15,6 +15,7 @@ router.post('/:id/submit', function(req, res) {
 
 router.get('/:id/summary', function(req, res) {
   const params = {
+    title: "Financial quiz level one",
     questionAmount: 5,
     averageResult: 3,
     userResult: 2,
