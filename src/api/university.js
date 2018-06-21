@@ -11,12 +11,12 @@ router.get('/', function (req, res) {
     thumbnail: `http://${hostname}:${port}/video_placeholder_2.jpg`,
     id: 2,
     title: 'Financial Quiz level one',
-    leassonKind: 'quiz'
+    lessonKind: 'quiz'
   }, {
     thumbnail: `http://${hostname}:${port}/video_placeholder.jpg`,
     id: 1,
     title: 'Financial Literacy',
-    leassonKind: 'video'
+    lessonKind: 'video'
   }])
 })
 

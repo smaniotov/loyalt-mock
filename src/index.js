@@ -1,8 +1,8 @@
 const express = require("express")
 const cors = require('cors')
 const bodyParser = require('body-parser')
-const {port, hostname} = require("./config")
-const {quiz, university} = require("./api")
+const {port,hostname} = require("./config")
+const {quiz,university,video} = require("./api")
 
 const app = express()
 
@@ -15,9 +15,11 @@ app.use(cors({
 app.use(express.static('public'))
 
 //  Endpoints
-app.use('/loyalty/quiz', quiz)
+app.use('/lesson/quiz', quiz)
 
-app.use('/loyalty/university', university)
+app.use('/lesson/university', university)
+
+app.use('/lesson/video', video)
 
 //  Serve
 app.listen(port, hostname, 1, () => {
