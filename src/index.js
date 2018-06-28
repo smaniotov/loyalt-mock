@@ -22,6 +22,5 @@ app.use('/lesson/university', university)
 app.use('/lesson/video', video)
 
 //  Serve
-app.listen(port, hostname, 1, () => {
-  console.log('Server running in port ' + port)
-})
+app.listen(port)
+console.log('Server running on port ' + port)

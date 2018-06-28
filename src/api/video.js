@@ -8,10 +8,10 @@ router.get('/:id', (req, res) => {
     thumbnail: `http://${hostname}:${port}/video_placeholder_2.jpg`,
     id: req.params.id,
     title: 'Financial Quiz level one',
-    description: 'Some description ndpasdpisam pdmaspd maspomd posamdpoas mdpoas mpdosapo mdposamd poasmdpo msapod msapmd posamd posamdp msapod msapo mdpsaom dposam dposamopd msapod mpsaomdspoamdpsm',
+    description: 'Some description ndpasdpisam pdmasspd maspomddsapmd opasm dopsamop dmopam posamdpoas mdpoas mpdosapo mdposamd poasmdpo msapod msapmd posamd posamdp msapod msapo mdpsaom dposam dposamopd msapod mpsaomdspoamdpsm',
+    watched: true,
     progress: {
-      stopPoint: 2.2,
-      ended: false
+      played: 24.55
     }
   }
   res.status(200)
