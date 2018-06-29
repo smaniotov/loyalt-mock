@@ -5,10 +5,11 @@ const {hostname,port} = require("../config")
 router.get('/:id', (req, res) => {
   const params = {
     videoID: '275716143',
-    thumbnail: `http://${hostname}:${port}/video_placeholder_2.jpg`,
+    thumbnail: `http://${hostname}:${port}/video_placeholder.jpg`,
     id: req.params.id,
     title: 'Financial Quiz level one',
     description: 'Some description ndpasdpisam pdmasspd maspomddsapmd opasm dopsamop dmopam posamdpoas mdpoas mpdosapo mdposamd poasmdpo msapod msapmd posamd posamdp msapod msapo mdpsaom dposam dposamopd msapod mpsaomdspoamdpsm',
+    points: 100,
     watched: true,
     progress: {
       played: 24.55

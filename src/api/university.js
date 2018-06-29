@@ -3,21 +3,24 @@ const router = express.Router()
 const {hostname, port} = require("../config")
 
 router.get('/', function (req, res) {
-  console.log(`page: ${req.query.page}`)
-  console.log(`size: ${req.query.size}`)
+  const {size, page} = req.query
 
-  res.status(200)
-  res.json([{
+  const param = [{
     thumbnail: `http://${hostname}:${port}/video_placeholder_2.jpg`,
     id: 2,
     title: 'Financial Quiz level one',
+    points: 200,
     lessonKind: 'quiz'
   }, {
     thumbnail: `http://${hostname}:${port}/video_placeholder.jpg`,
     id: 1,
+    points: 100,
     title: 'Financial Literacy',
     lessonKind: 'video'
-  }])
+  }]
+
+  res.status(200)
+  res.json(param.slice(0, size))
 })
 
 module.exports = router

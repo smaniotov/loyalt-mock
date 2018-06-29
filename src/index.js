@@ -2,7 +2,7 @@ const express = require("express")
 const cors = require('cors')
 const bodyParser = require('body-parser')
 const {port,hostname} = require("./config")
-const {quiz,university,video} = require("./api")
+const {quiz,university,video, loyalty} = require("./api")
 
 const app = express()
 
@@ -20,6 +20,8 @@ app.use('/lesson/quiz', quiz)
 app.use('/lesson/university', university)
 
 app.use('/lesson/video', video)
+
+app.use('/loyalty', loyalty)
 
 //  Serve
 app.listen(port)
